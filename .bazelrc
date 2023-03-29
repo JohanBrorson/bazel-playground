@@ -1,0 +1,4 @@
+common --enable_bzlmod
+
+test --verbose_failures
+test --zip_undeclared_test_outputs=false

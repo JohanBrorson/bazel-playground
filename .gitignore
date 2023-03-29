@@ -1,0 +1,6 @@
+# Bazel
+bazel-*
+
+# Python
+*.py[cod]
+__pycache__
