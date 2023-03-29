@@ -1,0 +1,12 @@
+load("@rules_python//python:defs.bzl", "py_library")
+load("@pip//:requirements.bzl", "requirement")
+
+py_library(
+    name = "testrunner",
+    srcs = ["testrunner.py"],
+    deps = [
+        requirement("unittest-xml-reporting"),
+    ],
+    visibility = ["//visibility:public"],
+    testonly = True,
+)
