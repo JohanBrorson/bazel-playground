@@ -1,16 +1,16 @@
 load("@rules_python//python:defs.bzl", "py_binary", "py_test")
 
 py_binary(
-  name = "calculator",
-  srcs = ["calculator.py"],
+    name = "calculator",
+    srcs = ["calculator.py"],
 )
 
 py_test(
-  name = "calculator_test",
-  srcs = ["calculator_test.py"],
-  deps = [
-    ":calculator",
-    "//tools/testrunner:testrunner",
-  ],
-  size = "small",
+    name = "calculator_test",
+    size = "small",
+    srcs = ["calculator_test.py"],
+    deps = [
+        ":calculator",
+        "//tools/testrunner",
+    ],
 )
