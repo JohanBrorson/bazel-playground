@@ -3,10 +3,10 @@ load("@pip//:requirements.bzl", "requirement")
 
 py_library(
     name = "testrunner",
+    testonly = True,
     srcs = ["testrunner.py"],
+    visibility = ["//visibility:public"],
     deps = [
         requirement("unittest-xml-reporting"),
     ],
-    visibility = ["//visibility:public"],
-    testonly = True,
 )
