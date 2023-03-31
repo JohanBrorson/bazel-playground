@@ -3,6 +3,9 @@ common --enable_bzlmod
 test --verbose_failures
 test --zip_undeclared_test_outputs=false
 
+# Build
+build --workspace_status_command=$(pwd)/tools/metadata/workspace_status.sh
+
 # BuildBuddy
 build --bes_results_url=https://app.buildbuddy.io/invocation/
 build --bes_backend=grpcs://remote.buildbuddy.io
