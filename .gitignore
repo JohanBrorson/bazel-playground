@@ -4,3 +4,6 @@ bazel-*
 # Python
 *.py[cod]
 __pycache__
+
+# BuildBuddy
+auth.bazelrc
